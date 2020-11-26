@@ -7,9 +7,9 @@
 }
 
 @font-face {
-  font-family: "Roboto-Ligh";
+  font-family: "Roboto-Light";
   font-display: swap;
-  src: url("../fonts/Roboto-Light.woff") format("woff");
+  src: url("../fonts/Roboto-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
 }
@@ -190,7 +190,57 @@ h1, h2, h3 {
   left: 46px;
 }
 
-benefits__items {
-  display: grid;
+.benefits {
+  min-height: 590px;
+  padding: 85px 0 52px 0;
+  background-color: #f3f3f3;
+}
+
+.benefits__header {
+  color: #2e2e2e;
+  font-family: Roboto-Regular;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.benefits__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.benefits__items {
+  display: inline-block;
+  width: 505px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.benefits__icons {
+  position: absolute;
+  left: -80px;
+}
+
+.benefits__subheader {
+  color: #ec644b;
+  font-family: "Roboto-Condensed";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.benefits__descr {
+  width: 447px;
+  font-family: "Roboto-Light";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,41 @@
-benefits__items
-    display: grid
-    
+.benefits
+	min-height: 590px
+	padding: 85px 0 52px 0
+	background-color: #f3f3f3
+
+	&__header
+		@include subheader-style
+		margin-bottom: 32px
+		
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		position: relative
+		
+		
+	&__items
+		display: inline-block
+		width: 505px
+		padding-bottom: 35px 
+		position: relative
+	&__icons
+		position: absolute
+		left: -80px
+	
+	&__subheader
+		color: #ec644b
+		font-family: "Roboto-Condensed"
+		font-size: 16px
+		font-weight: 700
+		font-style: normal
+	
+	&__descr
+		width: 447px
+		//проблема з шрифтом, не знайшов рішення
+		font-family: "Roboto-Light"
+		font-weight: 300
+		font-style: normal
+		letter-spacing: normal
+		line-height: normal
+
