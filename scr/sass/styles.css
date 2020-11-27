@@ -22,17 +22,17 @@
   font-style: normal;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 * {
   font-family: Roboto-Regular;
 }
 
 h1, h2, h3 {
   margin: 0;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
 }
 
 .promo {
@@ -192,7 +192,7 @@ h1, h2, h3 {
 
 .benefits {
   min-height: 590px;
-  padding: 85px 0 52px 0;
+  padding: 58px 0 52px 0;
   background-color: #f3f3f3;
 }
 
@@ -213,6 +213,7 @@ h1, h2, h3 {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  left: 75px;
 }
 
 .benefits__items {
@@ -229,10 +230,10 @@ h1, h2, h3 {
 
 .benefits__subheader {
   color: #ec644b;
-  font-family: "Roboto-Condensed";
-  font-size: 16px;
-  font-weight: 700;
-  font-style: normal;
+  color-font-family: "Roboto-Condensed";
+  color-font-size: 16px;
+  color-font-weight: 700;
+  color-font-style: normal;
 }
 
 .benefits__descr {
@@ -242,5 +243,56 @@ h1, h2, h3 {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+}
+
+.jobs {
+  min-height: 625px;
+  padding: 51px 0 57px 0;
+}
+
+.jobs hr {
+  width: 148px;
+  height: 1px;
+  background-color: #ec644b;
+  border: none;
+  margin: 20px auto 17px auto;
+}
+
+.jobs__header {
+  color: #2e2e2e;
+  font-family: Roboto-Regular;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.jobs__subheader {
+  color: #2e2e2e;
+  font-family: Roboto-Regular;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: -0.25px;
+  line-height: 24px;
+  text-align: center;
+  font-style: normal;
+  margin: 0 auto;
+  max-width: 879px;
+  margin: 0 auto;
+}
+
+.jobs__blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 361px;
+}
+
+.jobs__img {
+  max-width: 360px;
+  max-height: 210px;
 }
 /*# sourceMappingURL=styles.css.map */

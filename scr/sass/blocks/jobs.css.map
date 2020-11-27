@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACL,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,aAAa;CAAG",
+    "sources": [
+        "jobs.sass"
+    ],
+    "names": [],
+    "file": "jobs.css"
+}

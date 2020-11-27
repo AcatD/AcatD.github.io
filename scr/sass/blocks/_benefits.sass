@@ -1,10 +1,10 @@
 .benefits
 	min-height: 590px
-	padding: 85px 0 52px 0
+	padding: 58px 0 52px 0
 	background-color: #f3f3f3
 
 	&__header
-		@include subheader-style
+		@include header-style
 		margin-bottom: 32px
 		
 	&__wrapper
@@ -12,6 +12,7 @@
 		justify-content: space-between
 		flex-wrap: wrap
 		position: relative
+		left: 75px
 		
 		
 	&__items
@@ -24,18 +25,7 @@
 		left: -80px
 	
 	&__subheader
-		color: #ec644b
-		font-family: "Roboto-Condensed"
-		font-size: 16px
-		font-weight: 700
-		font-style: normal
+		@include img-subheader
 	
 	&__descr
-		width: 447px
-		//проблема з шрифтом, не знайшов рішення
-		font-family: "Roboto-Light"
-		font-weight: 300
-		font-style: normal
-		letter-spacing: normal
-		line-height: normal
-
+		@include img-descr
