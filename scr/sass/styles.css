@@ -1,34 +1,11 @@
-@font-face {
-  font-family: "Roboto-Regular";
-  font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Light";
-  font-display: swap;
-  src: url("../fonts/Roboto-Light.ttf") format("ttf");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Condensed";
-  font-display: swap;
-  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
 * {
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
@@ -49,7 +26,7 @@ h1, h2, h3 {
 }
 
 .promo__text {
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto', sans-serif;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
@@ -59,7 +36,7 @@ h1, h2, h3 {
 
 .promo__header {
   color: #ec644b;
-  font-family: "Roboto-Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 72px;
   font-weight: 700;
   font-style: normal;
@@ -70,7 +47,7 @@ h1, h2, h3 {
 
 .promo__subheader {
   color: #ffffff;
-  font-family: "Roboto-Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 42px;
   font-weight: 400;
   font-style: normal;
@@ -198,7 +175,7 @@ h1, h2, h3 {
 
 .benefits__header {
   color: #2e2e2e;
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 26px;
   font-weight: 700;
   font-style: normal;
@@ -230,19 +207,20 @@ h1, h2, h3 {
 
 .benefits__subheader {
   color: #ec644b;
-  color-font-family: "Roboto-Condensed";
-  color-font-size: 16px;
-  color-font-weight: 700;
-  color-font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .benefits__descr {
   width: 447px;
-  font-family: "Roboto-Light";
-  font-weight: 300;
+  color: #3a3a3a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  letter-spacing: -0.2px;
+  line-height: 22px;
 }
 
 .jobs {
@@ -260,7 +238,7 @@ h1, h2, h3 {
 
 .jobs__header {
   color: #2e2e2e;
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 26px;
   font-weight: 700;
   font-style: normal;
@@ -272,7 +250,7 @@ h1, h2, h3 {
 
 .jobs__subheader {
   color: #2e2e2e;
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.25px;
@@ -285,14 +263,41 @@ h1, h2, h3 {
 }
 
 .jobs__blocks {
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  max-width: 361px;
+  margin: 37px 26px 57px 0;
+}
+
+.jobs__blocks:last-child {
+  margin: 0;
 }
 
 .jobs__img {
   max-width: 360px;
   max-height: 210px;
+}
+
+.jobs__header-descr {
+  color: #ec644b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.jobs__descr {
+  width: 447px;
+  color: #3a3a3a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+  max-width: 359px;
+  text-align: justify;
+  text-align-last: center;
 }
 /*# sourceMappingURL=styles.css.map */

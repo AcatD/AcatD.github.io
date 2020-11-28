@@ -20,11 +20,27 @@
 		margin: 0 auto 
 
 	&__blocks
-		display: flex
-		flex-direction: row
+		display: inline-flex
+		flex-direction: column
+		align-items: center
 		justify-content: space-between
-		max-width: 361px
+		margin: 37px 26px 57px 0
+		
+		&:last-child	
+			margin: 0
+				
 
 	&__img
 		max-width: 360px
 		max-height: 210px
+		
+
+	&__header-descr
+		@include img-subheader
+		font-size: 18px
+
+	&__descr
+		@include img-descr
+		max-width: 359px
+		text-align: justify
+		text-align-last: center		
