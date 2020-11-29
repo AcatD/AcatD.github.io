@@ -2,9 +2,7 @@
 	display: flex
 	justify-content: space-between
 	margin-top: 23px
-	
-
-	
+	position: relative		
 	
 	&__logo
 		width: 96px	
@@ -27,6 +25,7 @@
 				font-weight: 400
 				text-decoration: none
 				color: #fff
+				
 	
 	&__menu
 		width: 600px
@@ -34,10 +33,27 @@
 		justify-content: space-between
 		margin-top: 37px
 		opacity: 0.8
+		margin-bottom: -10px
+
+		&_line
+			position: relative
+			border: none
+			border-right: 0.5px dotted #fff
+			height: 23px
+			opacity: 0.4
+			top: -5px
 		
 		&_items
+			height: 15px
 			text-decoration: none
 			color: #fff
 			font-size: 15px
 			font-weight: 100
-	
+			position: relative
+				
+			&:hover
+				text-decoration: none
+				color: #ec644b
+				border-bottom: 20px solid
+				border-width: 2px
+				padding-bottom: 25px

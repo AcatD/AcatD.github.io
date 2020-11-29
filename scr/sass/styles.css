@@ -93,6 +93,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   margin-top: 23px;
+  position: relative;
 }
 
 .header__logo {
@@ -127,13 +128,33 @@ h1, h2, h3 {
   justify-content: space-between;
   margin-top: 37px;
   opacity: 0.8;
+  margin-bottom: -10px;
+}
+
+.header__menu_line {
+  position: relative;
+  border: none;
+  border-right: 0.5px dotted #fff;
+  height: 23px;
+  opacity: 0.4;
+  top: -5px;
 }
 
 .header__menu_items {
+  height: 15px;
   text-decoration: none;
   color: #fff;
   font-size: 15px;
   font-weight: 100;
+  position: relative;
+}
+
+.header__menu_items:hover {
+  text-decoration: none;
+  color: #ec644b;
+  border-bottom: 20px solid;
+  border-width: 2px;
+  padding-bottom: 25px;
 }
 
 .button {
@@ -142,7 +163,6 @@ h1, h2, h3 {
   background-color: #ec644b;
   border: none;
   color: #ffffff;
-  font-family: Roboto-Regular;
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -151,20 +171,26 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #dc5238;
+}
+
 .button_main {
+  display: block;
   margin: 62px auto 105px auto;
   width: 230px;
   height: 57px;
   font-size: 15px;
   font-weight: 700;
-  position: relative;
 }
 
-.button_main span {
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 46px;
+.button_prices {
+  align-self: center;
+  margin: 25px 0 25px 0;
+}
+
+.button_prices:hover {
+  background-color: #dc5238;
 }
 
 .benefits {
@@ -228,40 +254,6 @@ h1, h2, h3 {
   padding: 51px 0 57px 0;
 }
 
-.jobs hr {
-  width: 148px;
-  height: 1px;
-  background-color: #ec644b;
-  border: none;
-  margin: 20px auto 17px auto;
-}
-
-.jobs__header {
-  color: #2e2e2e;
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
-.jobs__subheader {
-  color: #2e2e2e;
-  font-family: 'Roboto', sans-serif;
-  font-size: 21px;
-  font-weight: 300;
-  letter-spacing: -0.25px;
-  line-height: 24px;
-  text-align: center;
-  font-style: normal;
-  margin: 0 auto;
-  max-width: 879px;
-  margin: 0 auto;
-}
-
 .jobs__blocks {
   display: inline-flex;
   flex-direction: column;
@@ -299,5 +291,142 @@ h1, h2, h3 {
   max-width: 359px;
   text-align: justify;
   text-align-last: center;
+}
+
+.agent {
+  min-height: 342px;
+  background: url("../img/china-agent.jpg") center center/cover no-repeat;
+}
+
+.agent__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 58px 0 75px 0;
+}
+
+.agent__header {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin: 20px 0 22px 0;
+}
+
+.agent__subheader {
+  width: 984px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+  opacity: 0.7;
+}
+
+.prices {
+  min-height: 950px;
+  padding: 53px 0 58px 0;
+}
+
+.prices__cards {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 265px;
+  height: 355px;
+  border: 1px solid #e9e9e9;
+  background-color: #ffffff;
+  margin-right: 22px;
+}
+
+.prices__cards:last-child {
+  margin: 0;
+}
+
+.prices__cards_header {
+  width: 261px;
+  height: 61px;
+  background-color: #25333c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  line-height: 61px;
+}
+
+.prices__cards_logo {
+  width: 60px;
+  height: 52px;
+  align-self: center;
+}
+
+.prices__cards_subheader {
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 27px;
+}
+
+.prices__cards_subheader span {
+  color: #ec644b;
+  font-size: 28px;
+  text-transform: none;
+}
+
+.prices__cards_descr {
+  position: relative;
+  width: 212px;
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  left: 26px;
+}
+
+.mod-header hr {
+  width: 148px;
+  height: 1px;
+  background-color: #ec644b;
+  border: none;
+  margin: 20px auto 17px auto;
+}
+
+.mod-header__header {
+  color: #2e2e2e;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.mod-header__subheader {
+  color: #2e2e2e;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: -0.25px;
+  line-height: 24px;
+  text-align: center;
+  font-style: normal;
+  margin: 0 auto;
+  max-width: 879px;
+  margin: 0 auto;
+}
+
+.mod-header_prices {
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=styles.css.map */
