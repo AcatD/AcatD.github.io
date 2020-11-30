@@ -18,17 +18,17 @@
                 <img src="icons/logo.svg" alt="logo">
             </a>   
             <nav class="header__menu"> 
-                <a href="#" class="header__menu_items">
+                <a href="#benefits" class="header__menu_items">
                     Преимущества 
                 </a> <hr class="header__menu_line"> 
-                <a href="#" class="header__menu_items">
+                <a href="#jobs" class="header__menu_items">
                     Наша работа
+                </a> <hr class="header__menu_line">
+                <a href="#prices" class="header__menu_items">
+                    Цены
                 </a> <hr class="header__menu_line">
                 <a href="#" class="header__menu_items">
                     Схема работы
-                </a> <hr class="header__menu_line">
-                <a href="#" class="header__menu_items">
-                    Цены
                 </a> <hr class="header__menu_line">
                 <a href="#" class="header__menu_items">
                     Отзывы
@@ -106,7 +106,7 @@
  
 </section>
 
-<section class="benefits">
+<section class="benefits" id="benefits">
 	<div class="container">
 		<h3 class="benefits__header">Преимущества работы с GlobalOpt		
 		</h3>
@@ -192,7 +192,7 @@
 	</div>
 </section>
 
-<section class="jobs">
+<section class="jobs" id="jobs">
 	<div class="container">
 		<div class="mod-header">	
 			<div class="mod-header__header">
@@ -233,10 +233,10 @@
 	</div>
 </section>
 
-<section class="agent">
+<section class="agent" >
 	<div class="container">
 		<div class="agent__wrapper">
-			<img src="icons/agent_logo.svg" alt="" class="agent__logo">
+			<img src="icons/agent_icon.svg" alt="" class="agent__logo">
 			<div class="agent__header">
 				Агент в Китае
 			</div>
@@ -247,7 +247,7 @@
 	</div>
 </section>
 
-<section class="prices">
+<section class="prices" id="prices">
 	<div class="container">
 		<div class="mod-header mod-header_prices">
 			<div class="mod-header__header">
@@ -258,73 +258,104 @@
 				Перевозки грузов на дальние расстояния без каких-либо ограничений. Любой груз доставим вовремя. 
 			</div>
 		</div>
-		<div class="prices__cards">
-			<div class="prices__cards_header">
-				Доставка морем
+		<div class="prices__wrapper">
+			<div class="prices__cards">
+				<div class="prices__cards_header">
+					Доставка морем
+				</div>
+				<img src="icons/prices/prices_icon_1.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 35-50 дней <br>
+					<span>от 0,3$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					Морские перевозки грузов из Китая в Россию за 35 дней 
+					с прохождением таможни 
+				</div>
+				<button class="button button_prices">
+					Подробнее
+				</button>
 			</div>
-			<img src="icons/prices/prices_icon_1.png" alt="" class="prices__cards_logo">
-			<div class="prices__cards_subheader">
-				Доставка 35-50 дней <br>
-				<span>от 0,3$ за 1 кг</span>
+			<div class="prices__cards">
+				<div class="prices__cards_header">
+					Ж/Д доставка
+				</div>
+				<img src="icons/prices/prices_icon_2.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 15-28 дней <br>
+					<span>от 1$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					ЖД перевозки грузов из Китая в Россию от 2 недель 
+					с прохождением таможни
+				</div>
+				<button class="button button_prices">
+					Подробнее
+				</button>
 			</div>
-			<div class="prices__cards_descr">
-				Морские перевозки грузов из Китая в Россию за 35 дней 
-				с прохождением таможни 
+			<div class="prices__cards">
+				<div class="prices__cards_header">
+					Автодоставка
+				</div>
+				<img src="icons/prices/prices_icon_3.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 12-20 дня <br>
+					<span>от 1$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					Автоперевозки грузов из Китая в Россию от 2 недель 
+					с прохождением таможни
+				</div>
+				<button class="button button_prices">
+					Подробнее
+				</button>
 			</div>
-			<button class="button button_prices">
-				Подробнее
-			</button>
+			<div class="prices__cards">
+				<div class="prices__cards_header">
+					Авиа доставка
+				</div>
+				<img src="icons/prices/prices_icon_4.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 1-12 дней <br>
+					<span>от 6$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					Авиаперевозки грузов из Китая в Россию до 2 недель 
+					с прохождением таможни
+				</div>
+				<button class="button button_prices">
+					Подробнее
+				</button>					
+			</div>
 		</div>
-		<div class="prices__cards">
-			<div class="prices__cards_header">
-				Ж/Д доставка
-			</div>
-			<img src="icons/prices/prices_icon_2.png" alt="" class="prices__cards_logo">
-			<div class="prices__cards_subheader">
-				Доставка 15-28 дней <br>
-				<span>от 1$ за 1 кг</span>
-			</div>
-			<div class="prices__cards_descr">
-				ЖД перевозки грузов из Китая в Россию от 2 недель 
-				с прохождением таможни
-			</div>
-			<button class="button button_prices">
-				Подробнее
-			</button>
+		<div class="prices__consult-subheader">
+			Заказать бесплатную консультацию
 		</div>
-		<div class="prices__cards">
-			<div class="prices__cards_header">
-				Автодоставка
-			</div>
-			<img src="icons/prices/prices_icon_3.png" alt="" class="prices__cards_logo">
-			<div class="prices__cards_subheader">
-				Доставка 12-20 дня <br>
-				<span>от 1$ за 1 кг</span>
-			</div>
-			<div class="prices__cards_descr">
-				Автоперевозки грузов из Китая в Россию от 2 недель 
-				с прохождением таможни
-			</div>
-			<button class="button button_prices">
-				Подробнее
-			</button>
+		<div class="prices__consult-feed">
+			<img src="icons/prices/consult_icon.png" alt="" class="prices__consult-feed_logo">
+
+			<form class="prices__consult-feed_form" action="#">
+				<input name="name" required="" placeholder="Ваше имя" type="text">
+				<input name="phone" required="" placeholder="Ваш номер телефона" type="number">
+				<input name="email" required="" placeholder="Ваш Email" type="email">
+				<br>
+				<button class="button button_submit">Отправить заявкую</button>
+			</form>
 		</div>
-		<div class="prices__cards">
-			<div class="prices__cards_header">
-				Авиа доставка
+	</div>
+</section>
+
+<section class="agent manager" >
+	<div class="container">
+		<div class="agent__wrapper manager ">
+			<img src="icons/manager_icon.png" alt="" class="agent__logo">
+			<div class="agent__header manager">
+				Менеджеры компании
 			</div>
-			<img src="icons/prices/prices_icon_4.png" alt="" class="prices__cards_logo">
-			<div class="prices__cards_subheader">
-				Доставка 1-12 дней <br>
-				<span>от 6$ за 1 кг</span>
+			<div class="agent__subheader manager">
+				Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые
+				поставки от завода-изготовителя.
 			</div>
-			<div class="prices__cards_descr">
-				Авиаперевозки грузов из Китая в Россию до 2 недель 
-				с прохождением таможни
-			</div>
-			<button class="button button_prices">
-				Подробнее
-			</button>
 		</div>
 	</div>
 </section>
