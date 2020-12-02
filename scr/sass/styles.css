@@ -190,6 +190,11 @@ h1, h2, h3 {
   margin: 25px 0 25px 0;
 }
 
+.button_feedback-submit {
+  display: block;
+  margin: 0 auto;
+}
+
 .benefits {
   min-height: 590px;
   padding: 58px 0 52px 0;
@@ -441,6 +446,13 @@ h1, h2, h3 {
   top: 25px;
 }
 
+.prices__consult-feed_form fieldset {
+  width: 90%;
+  height: 90%;
+  margin-top: .7em;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
 .mod-header hr {
   width: 148px;
   height: 1px;
@@ -482,6 +494,7 @@ h1, h2, h3 {
 .scheme {
   min-height: 454px;
   padding: 40px 0 17px 0;
+  background-color: #f3f3f3;
 }
 
 .scheme__header {
@@ -529,5 +542,81 @@ h1, h2, h3 {
   line-height: 22px;
   width: 261px;
   text-align: center;
+}
+
+.feedback {
+  min-height: 454px;
+  background: url("../img/feedback_background.jpg") center center/cover no-repeat;
+}
+
+.feedback__wrapper {
+  max-width: 896px;
+  max-height: 297px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 122px;
+  padding: 62px 0 79px 0;
+}
+
+.feedback__wrapper_header {
+  padding-top: 15px;
+  display: block;
+  min-height: 68px;
+  background-color: #25333c;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback__wrapper_header span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.feedback__wrapper_form {
+  position: relative;
+  max-height: 230px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 25px;
+  justify-content: center;
+}
+
+.feedback__wrapper_form input {
+  width: 268px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding-left: 27px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.feedback__wrapper_form input:nth-child(1) {
+  margin-left: 20px;
+}
+
+.feedback__wrapper_form textarea {
+  resize: none;
+  width: 813px;
+  height: 71px;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-radius: 10px;
+  color: #616467;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  padding: 18px 25px;
+  margin-bottom: 17px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
