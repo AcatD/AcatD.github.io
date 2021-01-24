@@ -1,0 +1,79 @@
+.footer
+	background-color: #25333c
+	padding: 0 50px
+
+	&__contacts
+		padding-top: 24px
+		display: flex
+		align-items: center
+		&_logo 
+			margin-left: 90px
+			margin-right: 44px
+			img
+				width: 67px
+				height: 71px
+		&_adv
+			color: white
+			margin-right: 280px
+			margin-top: 20px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		padding:  0 50px 28px 50px
+
+		&_year
+			font-size: 13px
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.31
+			letter-spacing: normal
+			text-align: center
+			color: rgba(255, 255, 255, 0.6)
+
+		&_policy
+			max-width: 185px
+			height: 13px
+			font-size: 13px
+			font-weight: 300
+			line-height: 1.31
+			text-align: center
+			color: rgba(255, 255, 255, 0.6)
+			cursor: pointer
+			position: relative
+			&:after
+				background: none repeat scroll 0 0 transparent
+				content: ""
+				display: block
+				height: 1px
+				left: 50%
+				position: absolute
+				background: #ec644b
+				transition: width 0.4s ease 0s, left 0.4s ease 0s
+				width: 0px
+			&:hover							
+				color: #ec644b
+			&:hover:after
+				width: 100%
+				left: 0%
+				color: #ec644b
+
+		&_webdev
+			display: flex
+			justify-content: space-between
+			position: relative
+			p
+				font-size: 13px
+				font-weight: 300
+				line-height: 1.31
+				color: rgba(255, 255, 255, 0.6)
+			img
+				width: 30px
+				height: 32px
+				margin-top: -19px
+				margin-left: 10px
+.hr
+	opacity: 0.3
+	margin: 30px 0 
+	border: 1px solid #ffffff
+

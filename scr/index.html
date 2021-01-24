@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV project</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="sass/styles.css">
+	<link rel="stylesheet" href="sass/styles.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 </head>
 <body>
 
-<section class="promo">
+<section class="promo" id="up">
     
     <div class="container">
         <header class="header">
@@ -30,25 +32,23 @@
                 <a href="#scheme" class="header__menu_items">
                     Схема работы
                 </a> <hr class="header__menu_line">
-                <a href="#" class="header__menu_items">
+                <a href="#clients" class="header__menu_items">
                     Отзывы
                 </a> <hr class="header__menu_line">
-                <a href="#" class="header__menu_items">
+                <a href="#contacts" class="header__menu_items">
                     Контакты
                 </a> <hr class="header__menu_line">
             </nav>
             
-            <div class="header__feedback">
-                <div class="header__feedback_contact">
+            <div class="mod-questions__feedback">
+                <div class="mod-questions__contact">
                     Есть вопросы? <br>
                     <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                 </div>
 
-                <button class="button">
+                <a href="tel:+79264230100" class="button button-link">
                     Перезвоните мне
-                </button>
-
-
+                </a>
             </div>
         </header>
         
@@ -104,7 +104,7 @@
 			</button>	    
     </div>     
  
-</section>
+</section>	
 
 <section class="benefits" id="benefits">
 	<div class="container">
@@ -328,6 +328,75 @@
 				</button>					
 			</div>
 		</div>
+		<div class="prices__wrapper active">
+			<div class="prices__cards prices__cards-active">
+				<div class="prices__cards_header">
+					Доставка морем
+				</div>
+				<img src="icons/prices/prices_icon_1.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 35-50 дней <br>
+					<span>от 0,3$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					ТУТ МОЖЕТ БЫТЬ РЕКЛАМА 
+				</div>
+				<button data-modal="modal" class="button button_prices">
+					Подробнее
+				</button>
+			</div>
+			<div class="prices__cards prices__cards-active">
+				<div class="prices__cards_header">
+					Ж/Д доставка
+				</div>
+				<img src="icons/prices/prices_icon_2.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 15-28 дней <br>
+					<span>от 1$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					ЖД перевозки грузов из Китая в Россию от 2 недель 
+					с прохождением таможни
+				</div>
+				<button data-modal="modal" class="button button_prices">
+					Подробнее
+				</button>
+			</div>
+			<div class="prices__cards prices__cards-active">
+				<div class="prices__cards_header">
+					Автодоставка
+				</div>
+				<img src="icons/prices/prices_icon_3.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 12-20 дня <br>
+					<span>от 1$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					Автоперевозки грузов из Китая в Россию от 2 недель 
+					с прохождением таможни
+				</div>
+				<button data-modal="modal" class="button button_prices">
+					Подробнее
+				</button>
+			</div>
+			<div class="prices__cards prices__cards-active">
+				<div class="prices__cards_header">
+					Авиа доставка
+				</div>
+				<img src="icons/prices/prices_icon_4.png" alt="" class="prices__cards_logo">
+				<div class="prices__cards_subheader">
+					Доставка 1-12 дней <br>
+					<span>от 6$ за 1 кг</span>
+				</div>
+				<div class="prices__cards_descr">
+					Авиаперевозки грузов из Китая в Россию до 2 недель 
+					с прохождением таможни
+				</div>
+				<button data-modal="modal" class="button button_prices">
+					Подробнее
+				</button>					
+			</div>
+		</div>
 		<div class="prices__consult-subheader">
 			Заказать бесплатную консультацию
 		</div>
@@ -433,6 +502,61 @@
 	</div>
 </section>
 
+<section class="clients" id="clients">
+	<div class="conteiner">
+		<div class="mod-header mod-header_clients">
+			<div class="mod-header__header">
+				отзывы наших клиентов
+			</div>
+			<hr>
+			<div class="mod-header__subheader">
+				Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова 
+			</div>
+		</div>
+		<div class="clients__feedback">
+			<div>
+				<div class="clients__feedback_img">
+					<div class="clients__feedback_arrowleft">&#8249</div>
+					<img src="img/client_feedback.png" alt="#">
+					<div class="clients__feedback_arrowright">&#8250</div>
+				</div>
+				<div class="clients__feedback_name">
+				Анисимова Ольга
+				</div>
+				<p class="clients__feedback_descr">
+				Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+				</p>
+			</div>
+			<div>
+				<div class="clients__feedback_img">
+					<div class="clients__feedback_arrowleft">&#8249</div>
+					<img src="https://via.placeholder.com/114" alt="#">
+					<div class="clients__feedback_arrowright">&#8250</div>
+				</div>
+				<div class="clients__feedback_name">
+				Валеров Валера
+				</div>
+				<p class="clients__feedback_descr">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam quaerat nobis, eligendi natus veritatis quasi esse, aliquid quod, excepturi magnam voluptatem sapiente commodi laboriosam consequuntur fugit qui error numquam!
+				</p>
+			</div>
+			<div>
+				<div class="clients__feedback_img">
+					<div class="clients__feedback_arrowleft">&#8249</div>
+					<img src="img/client_feedback.png" alt="#">
+					<div class="clients__feedback_arrowright">&#8250</div>
+				</div>
+				<div class="clients__feedback_name">
+				Василий Васильев
+				</div>
+				<p class="clients__feedback_descr">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus eligendi ipsam, voluptatem nam odit aut debitis quia, quasi optio deleniti earum ex fugiat officiis id quam amet exercitationem et.Aliquid itaque dolore ratione eum quaerat error ipsa distinctio molestias? Nemo, excepturi! Recusandae doloribus asperiores quibusdam eaque nesciunt culpa officia excepturi minus, reprehenderit quasi commodi maiores fugiat tempore. Alias, corporis?
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="feedback">
 	<div class="container">
 		<!-- <div class="mod-header mod-header_feedback">	
@@ -462,6 +586,114 @@
 		</div>
 	</div>
 </section>
+
+<section class="map">
+	<div class="conteiner">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d103089.100489298!2d-86.8289999!3d36.1535486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466bef07995f3%3A0x72df5e9325af96ba!2s210%20Louise%20Ave%2C%20Nashville%2C%20TN%2037203%2C%20USA!5e0!3m2!1sen!2sua!4v1611341392523!5m2!1sen!2sua" width="1349" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+</section> 
+
+<footer class="footer" id="contacts">
+	<div class="conteiner">
+		<div class="footer__contacts">
+			<a href="#" class="footer__contacts_logo">
+                <img src="icons/logo.svg" alt="logo">
+			</a>
+			
+			<p class="footer__contacts_adv">
+				Global Opt - Доставка грузов из Китая в Россию и СНГ
+			</p>
+			<div class="mod-questions__feedback mod-questions__feedback_footer">
+                <div class="mod-questions__contact">
+                    Есть вопросы? <br>
+                    <a href="tel:+79264230100">+7 (926) 423 01 00</a>
+                </div>
+
+                <a href="tel:+79264230100" class="button button-link">
+                    Перезвоните мне
+                </a>
+            </div>
+		</div>
+	</div>
+	<hr class="hr">
+
+	<div class="footer__wrapper">
+		<div class="footer__wrapper_year">© 2010 Scratch.com.ua</div>
+		<div class="footer__wrapper_policy">Политика конфидециальности</div>
+		<div class="footer__wrapper_webdev">
+			<p>Создание сайта:</p>
+			<a href=#" class="footer__wrapper_webdev-link">
+				<img src="icons/webdev.png" alt="webdev">
+			</a>
+		</div>
+	</div>
+</footer>
+
+<a href="#up" class="iconup">
+	<img src="icons/up.svg" alt="up">
+</a>
+
+<div class="overlay">
+	<div class="modal" id="details">
+		<div class="modal__close"> &times; </div>
+		<div class="modal__header"> Пробна модалка </div>
+		<div class="modal__descr">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. At, facilis aut optio laboriosam autem dolorem, dolores officiis asperiores delectus blanditiis labore iste commodi pariatur accusamus! Vitae dolores excepturi doloremque rerum?
+			Libero deserunt pariatur, temporibus quis, cum veritatis ut distinctio voluptas at, quos illum. Consequatur incidunt, ad porro autem velit perspiciatis modi consectetur vitae maiores aut dolor quos beatae, saepe quisquam.
+			<br>
+			<br>
+			Provident voluptatibus quas explicabo officiis earum dolore aspernatur. Maxime maiores ad tempore ipsa nihil culpa error minima quas distinctio repellendus consequuntur excepturi ut quam laborum, mollitia asperiores ea earum eligendi!
+		</div>
+	</div>
+
+
+	<div class="modal modal_policy" id="policy">
+		<div class="modal__close">&times;</div>
+		<div class="modal__header"> Политика конфидециальности </div>
+		<div class="modal__descr">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Id neque ipsum consequatur atque eos animi? Molestias libero possimus facilis ad aperiam et animi? Eum quo, esse provident voluptatem quisquam odio?
+			Eveniet officia consequatur vero inventore assumenda porro pariatur possimus earum iure nisi quam voluptatem, sapiente unde iusto perferendis illo doloribus repellat fugiat ipsum nostrum similique laborum quo magnam dolorem. Dolor.
+			Qui tempora distinctio fugit. Ea repellendus nihil nemo necessitatibus officia iusto molestiae blanditiis harum officiis beatae? Debitis facere molestias blanditiis possimus impedit magni, nihil, reprehenderit ipsam quia voluptatum nostrum fuga.
+			Temporibus cum dolore harum vero officia molestiae repellendus quidem? Suscipit tempora voluptates cupiditate eum delectus, nostrum facilis consequatur ut dolorem numquam quod quo sed maxime consectetur ipsum hic quam magni.
+			Aperiam quasi unde, a ipsam architecto quam dignissimos placeat repudiandae perferendis velit doloremque fuga. Ea voluptate excepturi ut reprehenderit. Laboriosam totam molestiae cum autem expedita debitis dolore esse magni ipsa.
+			Enim doloribus amet, omnis impedit deleniti molestias. Eligendi sunt doloremque reiciendis ab inventore suscipit ea, impedit maiores quod, culpa libero ullam exercitationem? Recusandae corrupti mollitia beatae accusantium laboriosam impedit reprehenderit.
+			Quod minima molestiae iure ab iusto consequuntur itaque id corporis necessitatibus, unde ipsa, recusandae quisquam? Natus expedita quia, architecto totam iste facere obcaecati veritatis, deserunt doloribus illum rem, fuga ullam.
+			Possimus doloribus facere ipsam neque dolor. Impedit qui atque quod dicta alias quidem numquam possimus error suscipit voluptatem esse enim asperiores maxime quas porro nesciunt eligendi, odio illum quam. Beatae.
+			Fuga recusandae quos ut, inventore laboriosam labore minus harum repellat illum molestiae, quidem numquam totam beatae laudantium ipsum, voluptas magni quo id deleniti ipsa adipisci quaerat quia quam aut? Numquam.
+			Vel, ut accusamus expedita perspiciatis inventore, quo, animi eligendi ratione cumque illo doloribus molestiae? Labore porro inventore dolorum tenetur fugiat aliquam incidunt cumque minima officiis laudantium debitis, consequatur animi praesentium.
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consectetur voluptatem, minus mollitia provident fugit, omnis, deleniti suscipit tempore quisquam ipsa quia. Eos totam, voluptas recusandae ex nam quam esse?
+			Maiores rem modi at consequuntur, ipsa voluptatum possimus? Sit, voluptas. Unde optio ipsum, cupiditate aliquam harum perferendis ratione dignissimos. Inventore quos maiores unde ut placeat atque doloribus, quod nam porro.
+			Amet aliquam voluptas dolorum velit voluptatem eos omnis totam blanditiis dolorem illo ducimus neque illum adipisci ut qui cumque molestiae quia facilis quisquam temporibus quis natus, et repellat ex! Earum.
+			Dolores fugit suscipit expedita magnam nemo architecto obcaecati maxime, dolore similique amet magni optio tempore beatae quos eum laboriosam fuga aliquam assumenda deleniti consectetur harum! Nostrum quasi consequatur perferendis aliquam.
+			Officia deserunt aliquam inventore officiis harum! Aliquam officia sit similique laborum rerum distinctio blanditiis. Earum dicta expedita impedit tenetur quibusdam consectetur assumenda, nulla distinctio eveniet temporibus, dolorum voluptate voluptatum eius?
+			Hic delectus excepturi quae beatae blanditiis? Molestiae deserunt, veniam libero quisquam autem tempora architecto explicabo unde saepe assumenda, natus quibusdam totam, possimus ducimus modi. Voluptatum sed eos reprehenderit delectus sint.
+			Nulla alias deserunt, enim dolores provident sunt ipsam soluta nostrum dolor libero voluptatibus voluptas harum suscipit ipsa, incidunt veritatis. Cumque ad quidem harum libero numquam voluptate laboriosam facilis delectus hic.
+			Vitae maiores quam voluptatem ipsa odio dolorem esse minima quisquam soluta illo? Vitae repudiandae cum ducimus, est odio voluptatem quasi fuga asperiores voluptas harum rerum quam quae neque nobis nesciunt.
+			Quas, aspernatur dolores. Veritatis modi provident reiciendis ipsum optio unde delectus consectetur illum quas? Blanditiis vero magni temporibus quos, quo tempore earum necessitatibus mollitia, consequuntur, corrupti voluptatibus enim dolore maxime!
+			Laborum omnis fugiat modi inventore ad eius culpa molestiae et tempora rem, temporibus repellat quos nobis, quia debitis. Nisi quas incidunt quasi commodi illum cum quos consectetur facere odio aspernatur!
+			Voluptatum modi dolorum laboriosam reiciendis perspiciatis natus deleniti, sint fugit hic repellat provident ut dignissimos ipsam culpa quis, consectetur molestias sequi maiores autem illum ipsa pariatur assumenda necessitatibus? Assumenda, doloribus.
+			Vero veniam voluptates eius ad quis dignissimos modi neque aliquam impedit molestias. Dolorum esse, cupiditate quibusdam eligendi unde molestiae sapiente assumenda alias autem in dolor tenetur maxime cumque officia aliquam!
+			Est consectetur hic dignissimos obcaecati impedit omnis adipisci consequatur culpa facere, incidunt commodi quae autem nemo ex? Dolorum, qui mollitia ipsa excepturi illum, perferendis quod quam modi similique nulla culpa!
+			Quae necessitatibus ratione sequi rem. Nemo repellendus impedit doloribus animi, aliquid ipsa blanditiis aut tempore rem ducimus consectetur quo assumenda harum illo praesentium suscipit dignissimos quas recusandae! Architecto, fuga. Cum.
+			Assumenda atque iusto laudantium distinctio deserunt praesentium fugiat impedit dicta autem repudiandae nulla magni facilis temporibus molestias non vitae voluptates commodi, incidunt sit obcaecati a. Quo eveniet suscipit repellendus dolore!
+			Consequuntur explicabo veritatis iusto natus maiores perferendis sit obcaecati debitis doloribus mollitia, modi velit rem error ut voluptates aspernatur, aliquid perspiciatis neque. Minima quas doloribus praesentium quaerat qui eligendi amet!
+			Quaerat reprehenderit nesciunt odit officiis odio dignissimos consequatur ad, voluptas nostrum? Rerum amet, libero distinctio animi quam provident eaque impedit ratione voluptatibus illo harum. Earum doloremque molestiae ea rem ab!
+			Commodi accusamus doloribus molestiae esse impedit fugiat neque culpa. Necessitatibus, praesentium? Repellat natus, id perspiciatis ex exercitationem excepturi, sed nulla laborum blanditiis quis aliquid inventore, vel amet delectus. Ipsa, laborum?
+			Nulla deserunt cum fugiat, perspiciatis omnis praesentium veniam libero iste velit facilis quis voluptatibus assumenda in exercitationem dolor nemo! Reiciendis nisi error cupiditate modi incidunt ratione dolor aperiam voluptates eos?
+			Rem hic exercitationem quae eos voluptatem sint accusamus, quisquam, doloremque soluta repellendus molestias natus animi, consectetur perferendis ipsum labore! Nesciunt reiciendis aperiam doloribus blanditiis placeat dolores, asperiores debitis aliquam nostrum!
+			
+		</div>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick/slick.min.js"></script>
+<script src="js/wow.min.js"></script> 
+<script src="js/script.js"></script>
+
+
 
 </body>
 </html>

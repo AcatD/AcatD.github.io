@@ -7,26 +7,6 @@
 	&__logo
 		width: 96px	
 	
-	&__feedback
-		display: flex
-		flex-direction: row
-		margin-top: 28px
-
-		&_contact
-			display: flex
-			flex-direction: column
-			align-items: flex-end
-			color: #ffffff
-			margin-right: 19px
-			font-weight: 200
-			
-			a
-				font-size: 19px
-				font-weight: 400
-				text-decoration: none
-				color: #fff
-				
-	
 	&__menu
 		width: 600px
 		display: flex
@@ -34,6 +14,7 @@
 		margin-top: 37px
 		opacity: 0.8
 		margin-bottom: -10px
+		
 
 		&_line
 			position: relative
@@ -42,18 +23,33 @@
 			height: 23px
 			opacity: 0.4
 			top: -5px
+			&:last-child
+				border-right: none
 		
 		&_items
 			height: 15px
-			text-decoration: none
 			color: #fff
 			font-size: 15px
 			font-weight: 100
 			position: relative
-				
-			&:hover
-				text-decoration: none
+			padding-bottom: 30px
+			&:after     
+				bottom: 0
+				content: ""
+				display: block
+				height: 2px
+				left: 50%
+				position: absolute
+				background: #ec644b
+				transition: width 0.3s ease 0s, left 0.3s ease 0s
+				width: 0px				
+			&:hover							
 				color: #ec644b
-				border-bottom: 20px solid
-				border-width: 2px
-				padding-bottom: 25px
+				text-decoration: none
+			
+
+			&:hover:after  
+				width: 100%
+				left: 0%
+				color: #ec644b
+				
