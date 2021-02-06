@@ -1,0 +1,72 @@
+.header
+	display: flex
+	justify-content: space-between
+	margin-top: 23px
+	position: relative	
+	@media ( max-width: 570px  )
+			max-width: 570px
+			width: 100%
+			max-height: 70px
+			height: 100%
+			margin: 0
+			background-color: rgba(236, 100, 75, 1)
+			position: fixed
+	
+	&__logo
+		width: 96px
+		@media ( max-width: 540px  )
+			width: 48px
+		img
+			@media ( max-width: 540px  )
+				width: 35px
+				
+	
+	&__menu
+		width: 600px
+		display: flex
+		justify-content: space-between
+		margin-top: 37px
+		opacity: 0.8
+		margin-bottom: -10px
+		
+			
+		
+
+		&_line
+			position: relative
+			border: none
+			border-right: 0.5px dotted #fff
+			height: 23px
+			opacity: 0.4
+			top: -5px
+			&:last-child
+				border-right: none
+		
+		&_items
+			height: 15px
+			color: #fff
+			font-size: 15px
+			font-weight: 100
+			position: relative
+			padding-bottom: 30px
+			@media ( min-width: 571px  )
+				&:after     
+					bottom: 0
+					content: ""
+					display: block
+					height: 2px
+					left: 50%
+					position: absolute
+					background: #ec644b
+					transition: width 0.3s ease 0s, left 0.3s ease 0s
+					width: 0px				
+				&:hover							
+					color: #ec644b
+					text-decoration: none
+				&:hover:after  
+					width: 100%
+					left: 0%
+					color: #ec644b
+				
+			@media ( max-width: 570px  )
+				font-size: 8px
